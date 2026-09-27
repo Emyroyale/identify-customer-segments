@@ -36,7 +36,7 @@ After cleaning, categorical answers were expanded into around 148 individual yes
 
 I used a technique called **PCA (Principal Component Analysis)** to find the small number of underlying *themes* that explain most of the real differences between people — similar to how "overall wealth" might quietly explain dozens of individual survey answers at once, without needing to look at each one separately.
 
-![PCA Cumulative Explained Variance](./screenshots/pca_explained_variance.png)
+<p align="center"><img src="./screenshots/pca_explained_variance.png" alt="PCA Cumulative Explained Variance" width="720"></p>
 
 This compressed the data from ~148 features down to **80 themes**, while still keeping about **90% of the meaningful differences** between people. The two strongest themes turned out to be interpretable on their own:
 
@@ -49,7 +49,7 @@ With everyone now described by those 80 themes, I used **K-means clustering** to
 
 The open question was *how many* types make sense. I tried anywhere from 2 to 20, and measured how much better the grouping got each time:
 
-![K-Means Score vs Number of Clusters](./screenshots/kmeans_elbow_plot.png)
+<p align="center"><img src="./screenshots/kmeans_elbow_plot.png" alt="K-Means Score vs Number of Clusters" width="620"></p>
 
 Adding more groups kept helping up through **10 groups**, after which each additional group barely improved things — a classic "diminishing returns" pattern. So **10 customer types** were kept as the final segmentation: enough to be meaningfully distinct, few enough to actually reason about.
 
@@ -57,7 +57,7 @@ Adding more groups kept helping up through **10 groups**, after which each addit
 
 Finally, I sorted the *existing customers* into those same 10 types (using the grouping rules learned only from the general population, to keep the comparison fair), then compared: what share of the general population falls into each type, versus what share of customers falls into each type.
 
-![Cluster Proportions: General Population vs. Customers](./screenshots/cluster_proportions_comparison.png)
+<p align="center"><img src="./screenshots/cluster_proportions_comparison.png" alt="Cluster Proportions: General Population vs. Customers" width="720"></p>
 
 If a type's customer share is much higher than its general-population share, that type of person converts into a customer far more often than average — exactly who marketing should chase more of.
 
