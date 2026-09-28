@@ -9,6 +9,12 @@
 
 ---
 
+## At a Glance
+
+![Executive summary: who should marketing target?](./screenshots/executive_summary_dashboard.png)
+
+---
+
 ## The Problem, in Plain English
 
 A mail-order company sends catalogs and ads out to the general population, but not everyone is equally likely to buy. If you knew, for example, that "financially comfortable people in their 60s" convert into customers far more often than their share of the population would suggest, you'd want your next marketing dollar chasing more people like that — and fewer dollars chasing groups that almost never buy.
